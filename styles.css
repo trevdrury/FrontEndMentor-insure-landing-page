@@ -1,0 +1,29 @@
+/*#region START*/
+:root {
+  --darkViolet: hsl(256, 26%, 20%);
+  --grayishBlue: hsl(216, 30%, 68%);
+
+  --veryDarkViolet: hsl(270, 9%, 17%);
+  --darkGrayishViolet: hsl(273, 4%, 51%);
+  --veryLightGray: hsl(0, 0%, 98%);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /*font-family: 'DM Serif Display', serif;*/
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-size: 1.6rem;
+}
+/*#endregion*/
