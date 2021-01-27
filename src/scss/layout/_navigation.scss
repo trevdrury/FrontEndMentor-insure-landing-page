@@ -1,0 +1,109 @@
+@import "../abstracts/variables";
+
+.top-nav {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 80px;
+  padding: 0 2.4rem;
+
+  @media (min-width: 768px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.nav-toggle {
+  width: 32px;
+  height: 32px;
+  background-image: url("../../assets/icon-hamburger.svg");
+
+  &.expanded {
+    background-image: url("../../assets/icon-close.svg");
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.nav-links {
+  display: none;
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 327px;
+    height: 56px;
+    list-style: none;
+    margin: 1.2rem 0;
+    padding: 16px 0;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1.36px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid white;
+    }
+  }
+
+  &.expanded {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    margin: 0;
+    padding: 2.8rem 2.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 587px;
+    text-align: center;
+    background: url("../../assets/bg-pattern-mobile-nav.svg"), $veryDarkViolet;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: contain;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 80px;
+    padding: 0;
+
+    li {
+      width: max-content;
+      color: $darkGrayishViolet;
+      font-size: 1.3rem;
+      letter-spacing: 1.5px;
+      height: auto;
+      padding: 0 2.6rem;
+
+      &:hover {
+        border: none;
+        color: $veryDarkViolet;
+      }
+    }
+
+    #plans {
+      border: 1px solid $veryDarkViolet;
+      width: 146px;
+      margin-left: 0.8rem;
+      text-align: center;
+      color: $veryDarkViolet;
+
+      &:hover {
+        background-color: $veryDarkViolet;
+        color: white;
+      }
+    }
+  }
+}
