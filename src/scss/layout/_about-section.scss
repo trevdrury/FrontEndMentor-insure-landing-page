@@ -1,0 +1,43 @@
+@import "../abstracts/variables";
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2.4rem;
+
+  h2 {
+    font-family: $dmSerif;
+    font-size: 4.8rem;
+    color: $veryDarkViolet;
+  }
+
+  .about__detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 1.6rem;
+
+    img {
+      margin-bottom: 1.6rem;
+    }
+
+    h3 {
+      font-family: $dmSerif;
+      font-size: 2.8rem;
+      color: $veryDarkViolet;
+      margin: 1.6rem 0;
+    }
+
+    p {
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      text-align: center;
+      color: $darkGrayishViolet;
+      margin: 0;
+    }
+  }
+}

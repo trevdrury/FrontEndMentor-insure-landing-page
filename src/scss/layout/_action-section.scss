@@ -1,0 +1,37 @@
+@import "../abstracts/variables";
+
+.action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 344px;
+  margin: 14rem 2.4rem;
+  padding: 7.2rem 2.4rem;
+  background: url("../../assets/bg-pattern-how-we-work-mobile.svg"), $darkViolet;
+  background-repeat: no-repeat;
+  background-position: top right;
+  color: white;
+
+  h2 {
+    font-family: $dmSerif;
+    font-size: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    margin: 0;
+  }
+
+  button {
+    width: 160px;
+    height: 40px;
+    margin-top: 4rem;
+    background-color: $darkViolet;
+    color: white;
+    border: 1px solid white;
+
+    &:hover {
+      background-color: white;
+      color: $darkViolet;
+      cursor: pointer;
+    }
+  }
+}

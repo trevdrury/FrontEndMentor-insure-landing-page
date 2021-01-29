@@ -1,0 +1,54 @@
+@import "../abstracts/variables";
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: $darkViolet;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    padding: 0 2.4rem;
+  }
+
+  h1 {
+    font-family: $dmSerif;
+    font-size: 4.5rem;
+    text-align: center;
+    margin: 0;
+  }
+
+  p {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    text-align: center;
+    padding: 1.6rem 0;
+  }
+
+  button {
+    width: 146px;
+    height: 40px;
+    background-color: $darkViolet;
+    border: 1px solid white;
+    font-size: 1.3rem;
+    color: white;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: white;
+      color: $darkViolet;
+      cursor: pointer;
+    }
+  }
+}
