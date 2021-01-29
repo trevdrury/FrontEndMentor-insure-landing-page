@@ -5,7 +5,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 2.4rem;
+  padding: 14rem 2.4rem;
+
+  hr {
+    width: 150px;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid hsl(296, 30, 68%);
+    margin: 0;
+  }
 
   h2 {
     font-family: $dmSerif;
